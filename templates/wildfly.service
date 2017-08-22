@@ -1,0 +1,12 @@
+[Unit]
+Description=WildFly 10.1.0.Final
+After=network.target
+
+[Service]
+Type=simple
+User=wildfly
+Group=wildfly
+ExecStart=/opt/wildfly/bin/standalone.sh
+
+[Install]
+WantedBy=multi-user.target
